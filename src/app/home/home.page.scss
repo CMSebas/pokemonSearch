@@ -31,3 +31,8 @@ ion-card{
   overflow: hidden; /* Asegura que el contenido respete las esquinas redondeadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
+ion-card-content{
+  font-size: 1.8rem;
+  color: black;
+}
