@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Insumo 1 Movil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-title>
+            <h3>Ingresa el id del pokemon</h3>
+            <ion-input [(ngModel)]="id" placeholder="Id del pokemon"></ion-input>
+            <ion-button (click)="getPokemonDataID(id)">Obtener Datos del Pokémon</ion-button>
+
+
+          </ion-card-title>
+
+          <ion-card-content>
+            <ion-img [src]=pokemon.sprites.front_default></ion-img>
+            {{pokemon.name}}
+
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-title>
+            <h3>Ingresa el nombre del pokemon</h3>
+            <ion-input [(ngModel)]="name" placeholder="Nombre del pokemon"></ion-input>
+            <ion-button (click)="getPokemonDataName(name)">Obtener Datos del Pokémon</ion-button>
+
+
+          </ion-card-title>
+
+          <ion-card-content>
+            <ion-img [src]=pokemon2.sprites.front_default></ion-img>
+            {{pokemon2.id}}
+
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-title>
+            <h3>Ingresa el id del item</h3>
+            <ion-input [(ngModel)]="idItem" placeholder="Id del item"></ion-input>
+            <ion-button (click)="getItemDataID(idItem)">Obtener Datos del Item</ion-button>
+            
+
+
+          </ion-card-title>
+
+          <ion-card-content>
+            <ion-img [src]=item.sprites.default></ion-img>
+            {{item.name}}
+          
+            
+
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-title>
+            <h3>Ingresa el nombre del id</h3>
+            <ion-input [(ngModel)]="idName" placeholder="Nombre del item"></ion-input>
+            <ion-button  (click)="getItemDataName(idName)" >Obtener Datos del Item</ion-button>
+            
+
+
+          </ion-card-title>
+
+          <ion-card-content>
+            <ion-img [src]=item2.sprites.default></ion-img>
+            {{item2.name}}
+          
+            
+
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  
+ 
+
+
+
+
+
+
+
+</ion-content>
